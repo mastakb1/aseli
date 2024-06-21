@@ -5,7 +5,7 @@ from awDb import get_db_data
 
 # Retrieve data from database
 count_customer = get_db_data("""
-    SELECT dg.City, COUNT(dc.CustomerID) AS CustomerCount
+    SELECT dg.City, COUNT(dc.CustomerKey) AS CustomerCount
     FROM dimcustomer dc
     JOIN dimgeography dg ON dc.GeographyKey = dg.GeographyKey
     GROUP BY dg.City
