@@ -18,7 +18,7 @@ def read_config():
             'password': st.secrets["password"],
             'database': st.secrets["database"]
         }
-        else:
+    else:
         # Jika tidak ada file config.toml dan tidak ada secrets Streamlit, gunakan default
         config = {
             'host': os.getenv('DB_HOST', 'kubela.id'),
