@@ -17,3 +17,9 @@ def create_connection():
     except mysql.connector.Error as e:
         print(f"Error connecting to MySQL: {e}")
         return None
+
+def get_db_data(query):
+    conn = create_connection()
+    df = pd.read_sql(query, conn)
+    conn.close()
+    return df
