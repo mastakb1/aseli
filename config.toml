@@ -1,0 +1,15 @@
+
+
+[database]
+host = "kubela.id"
+port = 3306
+username = "davis2024irwan"
+password = "wh451n9m@ch1n3"
+database = "aw"
+
+[server]
+host = "127.0.0.1"
+port = 8080
+
+[application]
+debug_mode = true
