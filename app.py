@@ -18,6 +18,7 @@ SELECT dg.City, COUNT(dc.CustomerKey) AS CustomerCount
     ORDER BY CustomerCount DESC
     LIMIT 10
 """)
+customer_data_df = get_db_data
 
 # Check if data retrieval is successful (optional)
 if count_customer is None:
