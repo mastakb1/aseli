@@ -1,15 +1,6 @@
-
-
 [database]
-host = "kubela.id"
-port = 3306
-username = "davis2024irwan"
-password = "wh451n9m@ch1n3"
-database = "aw"
-
-[server]
-host = "127.0.0.1"
-port = 8080
-
-[application]
-debug_mode = true
+host = "kubela.id"        # Replace with your MySQL host address
+port = 3306                     # Replace with your MySQL port number
+user = "davis2024irwan"    # Replace with your MySQL username
+password = "wh451n9m@ch1n3"    # Replace with your MySQL password
+database = "aw" # Replace with your MySQL database name
