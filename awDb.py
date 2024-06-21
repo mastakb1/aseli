@@ -13,7 +13,7 @@ def create_connection():
     )
 
 
-def get_data_from_db(query):
+def get_db_data(query):
     conn = create_connection()
     df = pd.read_sql(query, conn)
     conn.close()
